@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #0a0a0a url("bg.jfif") center/cover no-repeat fixed;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  color: #1DB954;
+  margin-bottom: 20px;
+}
+
+.main-image-container {
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 6px 12px rgba(0,0,0,0.6);
+}
+
+.main-image-container img {
+  width: 100%;
+  display: block;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.thumbnails img {
+  width: 120px;
+  height: 90px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #1DB954;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.thumbnails img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.6);
+}
